@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Valentin130493/getWinTest.git/static/css/main.7ba1f8f3.css",
+    "main.js": "/Valentin130493/getWinTest.git/static/js/main.29034901.js",
+    "static/js/787.c1661167.chunk.js": "/Valentin130493/getWinTest.git/static/js/787.c1661167.chunk.js",
+    "index.html": "/Valentin130493/getWinTest.git/index.html",
+    "main.7ba1f8f3.css.map": "/Valentin130493/getWinTest.git/static/css/main.7ba1f8f3.css.map",
+    "main.29034901.js.map": "/Valentin130493/getWinTest.git/static/js/main.29034901.js.map",
+    "787.c1661167.chunk.js.map": "/Valentin130493/getWinTest.git/static/js/787.c1661167.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ba1f8f3.css",
+    "static/js/main.29034901.js"
+  ]
+}
