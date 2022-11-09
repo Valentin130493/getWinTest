@@ -1,7 +1,7 @@
 {
   "name": "getwin",
   "version": "0.1.0",
-  "homepage": "https://github.com/Valentin130493/getWinTest",
+  "homepage": "https://Valentin130493.github.io/getWinTest",
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.7.4",
