@@ -25,7 +25,7 @@ export const Home = () => {
     setState(pokemons);
   }, [pokemons]);
 
-  const previous = () => {
+  const previousPage = () => {
     if (prev !== null) dispatch(getAll(prev));
     setPageIndex((prev) => prev - 1);
   };
@@ -35,11 +35,11 @@ export const Home = () => {
     setPageIndex((prev) => prev + 1);
   };
 
-  const handleClick = (id: number) => {
+  const handleClickById = (id: number) => {
     navigate(`pokemon/${id}`);
   };
 
-  const test = (name: string | undefined) => {
+  const handleClickByName = (name: string | undefined) => {
     if (name != null) {
       dispatch(getOneByName(name));
       navigate(`pokemon/${pokemon.id}`);
@@ -89,7 +89,7 @@ export const Home = () => {
             aria-label="Pagination"
           >
             <button
-              onClick={previous}
+              onClick={previousPage}
               className="relative inline-flex items-center rounded-l-md border border-gray-300 bg-white px-4 py-4 text-sm mr-5 font-medium text-gray-500 hover:bg-gray-50 focus:z-20"
             >
               <ChevronLeftIcon className="h-5 w-5" aria-hidden="true" />
@@ -105,8 +105,8 @@ export const Home = () => {
                 className="flex justify-center flex-col items-center border-2 border-black rounded-3xl hover:bg-gray-200"
                 onClick={() =>
                   item.name
-                    ? handleClick(index + pageIndex * 20 + 1)
-                    : test(item?.pokemon?.name)
+                    ? handleClickById(index + pageIndex * 20 + 1)
+                    : handleClickByName(item?.pokemon?.name)
                 }
               >
                 {item.name ? item.name : item?.pokemon?.name}

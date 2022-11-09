@@ -20,7 +20,7 @@ export const Header = () => {
           to={routes.layout}
         >
           <ArrowLeftIcon className={"h-5 w-5"} />
-          {`back`}
+          <span>back</span>
         </Link>
       )}
       <p className={"mx-5"}>Header</p>
